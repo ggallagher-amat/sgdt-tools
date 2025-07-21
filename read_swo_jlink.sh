@@ -1,0 +1,9 @@
+#!/bin/bash
+
+JLINK_SWO_VIEW="JLinkSWOViewerCLExe"
+DEVICE="-device AMA4B2KP-KXR"
+SW_FREQ="-swofreq 1000000" 
+ITM_PORT="-itmport 0"
+SWO_ATTACH="-swoattach 0"
+
+$JLINK_SWO_VIEW $DEVICE $SWO_ATTACH $ITM_PORT $SW_FREQ 
